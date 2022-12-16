@@ -1,0 +1,1024 @@
+<!doctype html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>
+                Grunt
+            </title>
+            <link rel="stylesheet" href="assets/boostrap/css/bootstrap.min.css" />
+            <link rel="stylesheet" href="assets/css/style.css">
+            
+        </head>
+        <body>
+            <!--header section start-->
+            <section class="container">
+                <nav class="navbar bg-white fixed-top header-padding ">
+                    <div class="container">
+                    
+                        <h2 class="">
+                            <a class="navbar-brand logo-text" href="#">  Grunt<span class="text-primery">.</span></a>
+                        </h2>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                              </svg>
+                        </span>
+                       <small>
+                                MENU
+                       </small> 
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                        <button type="button" class="border-0 bg-white mt-5" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                              </svg>
+                        </button>
+                        </div>
+                        <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1  px-3">
+                            <li class="nav-item my-1">
+                            <a class="nav-link fs-5 text-primery" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item my-1">
+                            <a class="nav-link fs-5" href="#">What We Do</a>
+                            </li>
+                            <li class="nav-item my-1">
+                                <a class="nav-link fs-5" aria-current="page" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item my-1">
+                                <a class="nav-link fs-5" href="#">Portfolio</a>
+                             </li>
+                             <li class="nav-item my-1">
+                                <a class="nav-link fs-5" href="#">Gallery</a>
+                             </li>
+                             <li class="nav-item my-1">
+                                <a class="nav-link fs-5" href="#">Contact</a>
+                             </li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                </nav>
+            </section>            
+             <!--header section end-->
+            <!--grunt studio section start-->
+            <section class="container-fluid">
+                <div class="section-1-top-margin relative-position ">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="my-5">
+                                <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active" data-bs-interval="1500">
+                                        <img src="assets/image/coffee-in-hand.jpg" class="slider-img" alt="coffee-in-hand">
+                                      </div>
+                                      <div class="carousel-item" data-bs-interval="1000">
+                                        <img src="assets/image/one-girl-working-in-laptop-b&w.jpg" class="slider-img"  alt="one-girl-working-in-laptop-b&w">
+                                      </div>
+                                      <div class="carousel-item" data-bs-interval="1000">
+                                        <img src="assets/image/one-boy-working-in-laptop-b&w.jpg" class="slider-img" alt="one-boy-working-in-laptop-b&w">
+                                      </div>
+                                    </div>
+                                        <div class="slider-prev-icon">
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                              <span class="bg-primery rounded-5" aria-hidden="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                                                  </svg>
+                                            </span>
+                                              <span class="visually-hidden">Previous</span>
+                                            </button>
+                                        </div>
+                                        <div class="slider-next-icon">
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                              <span class="bg-primery rounded-5" aria-hidden="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                                  </svg>
+                                              </span>
+                                              <span class="visually-hidden">Next</span>
+                                            </button>
+    
+                                        </div>
+
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 d-lg-flex align-items-end main-heading-position relative-position  section-1st-bg">
+                            <h1 class="heading-position main-heading ">
+                                Grunt 
+                                <span class="d-lg-block">
+                                    Studio
+                                </span>
+                            </h1>
+                           
+                            <div class="">
+                                <p class="m-lg-5 big-font text-muted pe-lg-5 ps-lg-3 ">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde modi blanditiis iure.
+
+                                    <button type="button" class="btn btn-outline-danger my-5 py-3 px-4 rounded-5 d-block">Start a project</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+             <!--grunt studio section end-->
+            <div class="container">
+                <!-- behind the word section start-->
+                   <section class="section-padding">
+                       <div class="">
+                           <p class="sub-heading mb-1">
+                                   WHAT WE DO
+                           </p>
+                           <h3 class="primery-heading">
+                               Far far away, behind the word 
+                               <span class="d-lg-block">
+                                mountains far from the countries
+                               </span> 
+                           </h3>
+                       </div>
+                       <div class="behind-word-section-padding">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card  top-border mt-3 mt-lg-0 p-3">
+                                        <div class="card-body">
+                                        <h6 class="card-title ">Design</h6>
+                                        <p class="card-text small-font">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                        <a href="#" class="text-decoration-none link-color">LEARN MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card top-border mt-3 mt-lg-0 p-3">
+                                        <div class="card-body">
+                                        <h6 class="card-title">Development</h6>
+                                        <p class="card-text small-font">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                        <a href="#" class="text-decoration-none link-color">LEARN MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card top-border mt-3 mt-lg-0 p-3">
+                                        <div class="card-body">
+                                        <h6 class="card-title">eCommerce</h6>
+                                        <p class="card-text small-font">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                        <a href="#" class="text-decoration-none link-color">LEARN MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="behind-word-section-padding pt-4">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card top-border mt-3 mt-lg-0 p-3">
+                                        <div class="card-body">
+                                        <h6 class="card-title">Mobile Apps</h6>
+                                        <p class="card-text small-font">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                        <a href="#" class="text-decoration-none link-color">LEARN MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card top-border mt-3 mt-lg-0 p-3">
+                                        <div class="card-body">
+                                        <h6 class="card-title">CopyWriting</h6>
+                                        <p class="card-text small-font">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                        <a href="#" class="text-decoration-none link-color">LEARN MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card top-border mt-3 mt-lg-0 p-3">
+                                        <div class="card-body">
+                                        <h6 class="card-title">Search Engine Optimization</h6>
+                                        <p class="card-text small-font">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                        <a href="#" class="text-decoration-none link-color">LEARN MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                   </section>
+                   <!-- behind the word section end-->
+                <!--About us section start-->
+                   <section class="m-lg-5 p-lg-5">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="my-5 py-lg-5">
+                                    <img class="img-fluid" src="assets/image/one-girl-working-in-laptop.jpg" alt="one-girl-working-in-laptop">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="m-lg-5 me-lg-0 ps-lg-5 py-lg-5 text-grey">
+                                    <p class="sub-heading mb-1">
+                                            ACQUAINT US
+                                    </p>
+                                    <h2 class="primery-heading ">
+                                        About us
+                                    </h2>
+                                    <p class="my-4">
+                                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country,
+                                         in which roasted parts of sentences fly into your mouth.
+                                    </p>
+                                    <div class="d-flex align-items-center gap-5">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#66a745" class="me-3 mb-2 bi bi-check2" viewBox="0 0 16 16">
+                                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                  </svg>
+                                                <p>
+                                                    Design
+                                                </p>
+                                            </div>
+    
+                                            <div class="d-flex align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#66a745" class="me-3 mb-2 bi bi-check2" viewBox="0 0 16 16">
+                                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                  </svg>
+                                                <p>
+                                                    Development
+                                                </p>
+                                            </div>
+    
+                                            <div class="d-flex align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#66a745" class="me-3 mb-2 bi bi-check2" viewBox="0 0 16 16">
+                                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                  </svg>
+                                                <p>
+                                                    eCommerce
+                                                </p>
+                                            </div>
+    
+                                        </div>
+                                        <div class="ms-lg-4">
+                                            <div class="d-flex align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#66a745" class="me-3 mb-2 bi bi-check2" viewBox="0 0 16 16">
+                                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                  </svg>
+                                                <p>
+                                                    Mobile Apps
+                                                </p>
+                                            </div>
+    
+                                            <div class="d-flex align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#66a745" class="me-3 mb-2 bi bi-check2" viewBox="0 0 16 16">
+                                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                  </svg>
+                                                <p>
+                                                    Copywriting
+                                                </p>
+                                            </div>
+    
+                                            <div class="d-flex align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#66a745" class="me-3 mb-2 bi bi-check2" viewBox="0 0 16 16">
+                                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                  </svg>
+                                                <p>
+                                                    SEO
+                                                </p>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                    <div class="my-5 ">
+                                        <!-- Button trigger modal -->
+                                            <button type="button" class="modal-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#bd1220" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                                                  </svg>
+                                                <span class="ms-2 text-primery"> 
+                                                    Watch the video
+                                                </span>  
+                                            </button>
+                                            
+                                            <!-- Modal -->
+
+                                            <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                <div class="modal-content ">
+                                                    <div class="position-relative">
+                                                    <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                                                          </svg>
+                                                    </button>
+                                                    </div>
+                                                    <div class="modal-body ">
+                                                        <iframe width="100%" height="600px" src="https://www.youtube.com/embed/cjBZ6mBqO_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                                </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                     </div>
+                                    </div>
+                                </div>
+                            </div>
+                   </section>
+                <!--About us section end-->
+                <!-- talented people section start-->
+                   <section class="section-padding pt-lg-0">
+                    <div class="mt-lg-1">
+                        <p class="sub-heading mb-2">
+                            MEET THE TEAM
+                        </p>
+                        <h2 class="primery-heading mb-lg-4 mb-5">
+                            We are talented people.
+                        </h2>
+                        <div class="d-flex align-items-center flex-column flex-lg-row">
+                            <div>
+                                <img class="people-img" src="assets/image/talented-people-1.jpg" alt="talented-people-1">
+                                <div class="m-lg-5 p-lg-3 pt-4 pb-3 pt-lg-0 pe-lg-0 px-lg-5">
+                                    <h5 class="fw-semibold">
+                                        Jacob Spencer
+                                    </h5>
+                                    <p class="text-grey">
+                                        CEO, Co-Founder
+                                    </p>
+                                    <p class="mt-4 text-grey lh-base">
+                                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live 
+                                        in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                                    </p>
+                                    <p class="mt-2 text-grey lh-base">
+                                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
+                                         fly into your mouth.
+                                    </p>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <p class="mt-3">
+                                            Follow me:
+                                        </p>
+                                        <a href="https://twitter.com/i/flow/login" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#1da1f2" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                              </svg>
+                                        </a>
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3b5998" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                              </svg>
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ec5489" class="bi bi-dribbble" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8zm5.284 3.688a6.802 6.802 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A6.95 6.95 0 0 1 8 1.18zm-2.907.642A43.123 43.123 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.865 6.865 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.817 6.817 0 0 1-1.752-4.564zM8 14.837a6.785 6.785 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.246 28.246 0 0 1 1.457 5.18A6.722 6.722 0 0 1 8 14.837zm3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.774 6.774 0 0 1-2.924 4.573z"/>
+                                              </svg>
+                                        </a>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#c53584" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                              </svg>
+                                        </a>
+                                       <a href="https://in.linkedin.com/" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0077b5" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                              </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="pt-4">
+
+                                    <img class="people-img" src="assets/image/talented-people-2.jpg" alt="talented-people-2">
+                                </div>
+                                <div class="m-lg-5 p-lg-3 pt-4 pb-3 pt-lg-0 pe-lg-0 px-lg-5">
+                                    <h5 class="text-semibold">
+                                        Chris Peters
+                                    </h5>
+                                    <p class="text-grey">
+                                        CEO, Co-Founder
+                                    </p>
+                                    <p class="mt-4 text-grey lh-base">
+                                        Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however 
+                                        a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                                    </p>
+                                    <p class="mt-2 text-grey lh-base">
+                                        The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but
+                                         the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.h.
+                                    </p>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <p class="mt-3">
+                                            Follow me:
+                                        </p>
+                                        <a href="https://twitter.com/i/flow/login" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#1da1f2" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                              </svg>
+                                        </a>
+                                        <a href="https://github.com/" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-github" viewBox="0 0 16 16">
+                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                              </svg>
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ec5489" class="bi bi-dribbble" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8zm5.284 3.688a6.802 6.802 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A6.95 6.95 0 0 1 8 1.18zm-2.907.642A43.123 43.123 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.865 6.865 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.817 6.817 0 0 1-1.752-4.564zM8 14.837a6.785 6.785 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.246 28.246 0 0 1 1.457 5.18A6.722 6.722 0 0 1 8 14.837zm3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.774 6.774 0 0 1-2.924 4.573z"/>
+                                              </svg>
+                                        </a>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#c53584" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                              </svg>
+                                        </a>  
+                                         <a href="https://in.linkedin.com/" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0077b5" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                              </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </section>
+                 <!-- talented people section end-->
+                   <!--latest works section start-->
+                    <section class="section-padding">
+                        <div class="text-center py-5 mt-lg-4 mb-1">
+                            <p class="sub-heading mt-lg-3 mb-2">
+                                RECENT WORKS
+                            </p>
+                            <h2 class="primery-heading">
+                                We love what we do, check out some  of
+                                <span class="d-lg-block">
+                                    our latest works
+                                </span> 
+                            </h2>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img class="img-fluid " src="assets/image/white-sound.jpg" alt="white-sound">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="static-position">
+                                        <div class="ms-lg-5 ps-lg-5 ">
+                                            <h3 class="mt-4 mt-lg-0">
+                                                Project title one
+                                            </h3>
+                                            <p class="text-grey lh-base mb-4">
+                                                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country,
+                                                 in which roasted parts of sentences fly into your mouth.
+                                            </p>
+                                            <a class="text-decoration-none link-color" href="#">
+                                                VISIT WEBSITE
+                                            </a>
+                                        </div>
+                                        <div class="ms-lg-5 ps-lg-5 mt-4 ">
+                                            <div class="card card-border shadow  px-3 py-2">
+                                                <div class="card-body">
+                                                  <h5 class="card-title"></h5>
+                                                  <p class="card-text">
+                                                        <em>
+                                                            “Far far away, behind the word mountains,
+                                                             <span class="bg-tertiary ">
+                                                                far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right 
+                                                            </span> 
+                                                            at the coast of the Semantics, a large language ocean.”
+    
+                                                        </em>
+                                                  </p>
+                                                  <div class="d-flex align-items-center">
+                                                    <div class="">
+                                                        <img class="rounded-circle-img rounded-circle" src="assets/image/jacob.jpg" alt="jacob">
+    
+                                                    </div>
+                                                    <div class="ms-3 mt-3">
+                                                        <h6 class="text-semibold mb-0">
+                                                            Jacob Spencer
+                                                        </h6>
+                                                        <p class="text-grey">
+                                                            Web Designer    
+                                                        </p>
+                                                    </div>
+                                                  </div>
+                                                  <a href="#" class=""></a>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-5">
+                            <div class="row">
+                                <div class="col-lg-6 order-2 order-lg-1">
+                                    <div class="static-position ">
+                                        <div class="me-lg-5 pe-lg-5 ">
+                                            <h3 class="mt-4 mt-lg-0">
+                                                Project title two
+                                            </h3>
+                                            <p class="text-grey lh-base mb-4">
+                                                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                                            </p>
+                                            <a class="text-decoration-none link-color" href="#">
+                                                VISIT WEBSITE
+                                            </a>
+                                        </div>
+                                        <div class="me-lg-5 pe-lg-5 mt-4">
+                                            <div class="card card-border shadow  px-3 py-2">
+                                                <div class="card-body">
+                                                  <h5 class="card-title"></h5>
+                                                  <p class="card-text">
+                                                    <em>
+                                                        “A small river named Duden
+                                                        <span class="bg-tertiary ">
+                                                            flows by their place and supplies it with the necessary regelialia.
+                                                        </span>
+                                                        
+                                                         It is a paradisematic country, in which roasted parts of sentences fly into your mouth.”
+
+                                                    </em>
+                                                  </p>
+                                                  <div class="d-flex align-items-center ot">
+                                                    <img class="rounded-circle-img rounded-circle" src="assets/image/jean.jpg" alt="jean">
+                                                    <div class="ms-3 mt-3">
+                                                        <h6 class="text-semibold mb-0">
+                                                            Jean Smith  
+                                                        </h6>
+                                                        <p class="text-grey">
+                                                            Web Designer    
+                                                        </p>
+                                                    </div>
+                                                  </div>
+                                                  <a href="#" class=""></a>
+                                                </div>
+                                              </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-lg-6 order-1 order-lg-2">
+                                    <img class="img-fluid" src="assets/image/white-cup.jpg" alt="white-cup">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-5 pb-lg-5">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img class="img-fluid" src="assets/image/laptop-in-bag.jpg" alt="laptop-in-bag">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="static-position ">
+                                        <div class="ms-lg-5 ps-lg-5">
+                                            <h3 class="mt-4 mt-lg-0">
+                                                Project title  three    
+                                            </h3>
+                                            <p class="text-grey lh-base mb-4">
+                                                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                                            </p>
+                                            <a class="text-decoration-none link-color" href="#">
+                                                VISIT WEBSITE
+                                            </a>
+                                        </div>
+                                        <div class="ms-lg-5 ps-lg-5 mt-4">
+                                            <div class="card card-border shadow  px-3 py-2">
+                                                <div class="card-body">
+                                                  <h5 class="card-title"></h5>
+                                                  <p class="card-text">
+                                                    <em>
+                                                        “Far far away, behind the word mountains,
+                                                         <span class="bg-tertiary ">
+                                                            far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right 
+                                                        </span> 
+                                                        at the coast of the Semantics, a large language ocean.”
+                                                    </em>
+                                                  </p>
+                                                  <div class="d-flex align-items-center">
+                                                    <img class="rounded-circle-img rounded-circle" src="assets/image/jacob.jpg" alt="jacob">
+                                                    <div class="ms-3 mt-3">
+                                                        <h6 class="text-semibold mb-0">
+                                                            Jacob Spencer
+                                                        </h6>
+                                                        <p class="text-grey">
+                                                            Web Designer    
+                                                        </p>
+                                                    </div>
+                                                  </div>
+                                                  <a href="#" class=""></a>
+                                                </div>
+                                              </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                   <!--latest works section end-->
+                </div>
+                <div class="container-fluid secondary-bg">
+                    <!--Our Client Sayings section start-->
+                        <div class="container">
+                             <section class="section-padding pb-4">
+                                <div class="mt-5 pt-lg-2 ">
+                                    <div class="text-center">
+                                        <p class="sub-heading  mb-2">
+                                            TESTIMONIALS
+                                        </p>   
+                                        <h2 class="primery-heading">
+                                            Our Client Sayings
+                                        </h2>
+                                    </div>
+                                    <div class="my-5 pt-lg-2 pb-lg-5">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                               <div class="card card-border shadow  px-3 py-2">
+                                            <div class="card-body">
+                                              <h5 class="card-title"></h5>
+                                              <p class="card-text">
+                                                <em>
+                                                    “Far far away, behind the word mountains,
+                                                     <span class="bg-tertiary ">
+                                                        far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right 
+                                                    </span> 
+                                                    at the coast of the Semantics, a large language ocean.”
+                                                </em>
+                                              </p>
+                                              <div class="d-flex align-items-center">
+                                                <img class="rounded-circle-img rounded-circle" src="assets/image/jacob.jpg" alt="jacob">
+                                                <div class="ms-3 mt-3">
+                                                    <h6 class="text-semibold mb-0">
+                                                        Jacob Spencer
+                                                    </h6>
+                                                    <p class="text-grey">
+                                                        Web Designer    
+                                                    </p>
+                                                </div>
+                                              </div>
+                                              <a href="#" class=""></a>
+                                            </div>
+                                                 </div>
+                                            </div>
+                                            <div class="col-lg-6">  
+                                                <div class="card card-border shadow mt-4 mt-lg-0 mb-4 ms-lg-2 px-3 pt-lg-2 pb-4">
+                                                    <div class="card-body">
+                                                      <h5 class="card-title"></h5>
+                                                      <p class="card-text">
+                                                        <em>
+                                                            “A small river named Duden
+                                                            <span class="bg-tertiary ">
+                                                                flows by their place and supplies it with the necessary regelialia.
+                                                            </span>
+                                                            
+                                                             It is a paradisematic country, in which roasted parts of sentences fly into your mouth.”
+    
+                                                        </em>
+                                                      </p>
+                                                      <div class="d-flex align-items-center mb-lg-2">
+                                                        <img class="rounded-circle-img rounded-circle" src="assets/image/jean.jpg" alt="jean">
+                                                        <div class="ms-3 mt-3">
+                                                            <h6 class="text-semibold mb-0">
+                                                                Jean Smith  
+                                                            </h6>
+                                                            <p class="text-grey">
+                                                                Web Designer    
+                                                            </p>
+                                                        </div>
+                                                      </div>
+                                                      <a href="#" class=""></a>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="card card-border shadow mt-4 mt-lg-0 px-3 pt-lg-2 pb-4">
+                                                    <div class="card-body">
+                                                      <h5 class="card-title"></h5>
+                                                      <p class="card-text">
+                                                        <em>
+                                                            “A small river named Duden
+                                                            <span class="bg-tertiary ">
+                                                                flows by their place and supplies it with the necessary regelialia.
+                                                            </span>
+                                                            
+                                                             It is a paradisematic country, in which roasted parts of sentences fly into your mouth.”
+    
+                                                        </em>
+                                                      </p>
+                                                      <div class="d-flex align-items-center mb-lg-2">
+                                                        <img class="rounded-circle-img rounded-circle" src="assets/image/jean.jpg" alt="jean">
+                                                        <div class="ms-3 mt-3">
+                                                            <h6 class="text-semibold mb-0">
+                                                                Jean Smith  
+                                                            </h6>
+                                                            <p class="text-grey">
+                                                                Web Designer    
+                                                            </p>
+                                                        </div>
+                                                      </div>
+                                                      <a href="#" class=""></a>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="card card-border mt-4 mt-lg-0 shadow ms-lg-2 px-3 py-2">
+                                                    <div class="card-body">
+                                                      <h5 class="card-title"></h5>
+                                                      <p class="card-text">
+                                                        <em>
+                                                            “Far far away, behind the word mountains,
+                                                             <span class="bg-tertiary ">
+                                                                far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right 
+                                                            </span> 
+                                                            at the coast of the Semantics, a large language ocean.”
+                                                        </em>
+                                                      </p>
+                                                      <div class="d-flex align-items-center">
+                                                        <img class="rounded-circle-img rounded-circle" src="assets/image/jacob.jpg" alt="jacob">
+                                                        <div class="ms-3 mt-3">
+                                                            <h6 class="text-semibold mb-0">
+                                                                Jacob Spencer
+                                                            </h6>
+                                                            <p class="text-grey">
+                                                                Web Designer    
+                                                            </p>
+                                                        </div>
+                                                      </div>
+                                                      <a href="#" class=""></a>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                   <!--Our Client Sayings section end-->
+                </div>
+                <div class="container"> 
+                  <!--Studio Gallery strat-->
+                    <section class="section-padding">
+                            <div class=" my-5 ">
+                                <div class="text-center pb-5 mb-2">
+                                    <p class="sub-heading mb-2">
+                                            PHOTOS
+                                    </p>
+                                    <h2 class="primery-heading">
+                                        Studio Gallery
+                                    </h2>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="mt-4  mt-lg-0">
+                                            <img class="img-fluid" src="assets/image/one-boy-working-in-laptop.jpg" alt="one-boy-working-in-laptop">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="mt-4  mt-lg-0">
+                                            <img class="img-fluid" src="assets/image/white-sound.jpg" alt="sound">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="mt-4  mt-lg-0">
+                                            <img class="img-fluid" src="assets/image/black-iphone.jpg" alt="black-iphone">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="mt-4  mt-lg-0">
+                                            <img class="img-fluid studio-gallery-img" src="assets/image/white-cup.jpg" alt="cup">
+
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="mt-4  mt-lg-0">
+                                            <img class="img-fluid mt-lg-4" src="assets/image/laptop-in-bag.jpg" alt="laptop-in-bag">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="mt-4  mt-lg-0">
+                                            <img class="img-fluid studio-gallery-img" src="assets/image/laptop7photofream.jpg" alt="laptop&photofream">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="mt-4  mt-lg-0">
+                                            <img class="img-fluid studio-gallery-img" src="assets/image/click-photo.jpg" alt="click-photo">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="mt-4  mt-lg-0">
+                                            <img class="img-fluid mt-lg-4" src="assets/image/headphone.jpg" alt="headphone">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="mt-4  mt-lg-0">
+                                            <img class="img-fluid studio-gallery-img" src="assets/image/walking.jpg" alt="walking">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="mt-4  mt-lg-0">
+                                            <img class="img-fluid studio-gallery-img" src="assets/image/laptop&phone.jpg" alt="laptop&phone">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4">
+                                     </div>
+                                    <div class="col-lg-4">
+                                        <div class="mt-4  mt-lg-0">
+                                            <img class="img-fluid  studio-gallery-img" src="assets/image/white-t-shart-man.jpg" alt="white-t-shart-man">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+                    <!--Studio Gallery end-->
+                    <!--Contact Us section start-->
+                    <section class="section-padding">
+                        <div class="mt-lg-5 pt-lg-5">
+                            <div class="p-4 shadow-lg">
+                                <div class="text-center mb-4 mt-2">
+                                    <p class="sub-heading mb-lg-2">
+                                            GET IN TOUC 
+                                    </p>
+                                    <h2 class="primery-heading">
+                                        Contact Us
+                                    </h2>
+                                </div>
+                                <div class="my-lg-4 py-lg-3">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="mt-2 mb-4 mb-lg-1">
+                                                    <input type="text" class="form-control py-2" placeholder="First name">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="my-2  mb-lg-1">
+                                                    <input type="text" class="form-control py-2" placeholder="Last name">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="my-4">
+                                                <input type="email" class="form-control py-2" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="my-4">
+                                                <textarea class="form-control py-2" placeholder="Message" rows="10" cols="30"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="my-4">
+                                                <button type="button" class="button-style rounded-5">
+                                                    <span class="">
+                                                        Send Message
+                                                    </span> 
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <!--Contact Us section end-->
+                </div>
+                <!--footer section start-->
+                <div class="container-fluid black-bg">
+                    <div class="container">
+                        <section class="section-padding text-grey">
+                            <div class=" mt-4 pt-5">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="mt-lg-3">
+                                            <h5 class="text-white">
+                                                About Us
+                                            </h5>
+                                            <p class="mt-lg-4 text-grey lh-base">
+                                                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, 
+                                                in which roasted parts of sentences fly into your mouth.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="ms-lg-5 ps-lg-5 mt-5 mt-lg-2">
+                                            <h5 class="text-white">
+                                                Navigation
+                                            </h5>
+                                            <ul class="list-unstyled mt-lg-4"> 
+                                                <li class="my-2">
+                                                    <a class="text-decoration-none text-grey footer-link" href="#">
+                                                        Home
+                                                    </a>
+                                                </li>
+                                                <li class="my-2">
+                                                    <a class="text-decoration-none text-grey footer-link" href="#">
+                                                        What We Do
+                                                    </a>
+                                                </li>
+                                                <li class="my-2">
+                                                    <a class="text-decoration-none text-grey footer-link" href="#">
+                                                        About Us
+                                                    </a>
+                                                </li>
+                                                <li class="my-2">
+                                                    <a class="text-decoration-none text-grey footer-link" href="#">
+                                                        Team
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div>
+                                            <h5 class="text-white mt-5 mt-lg-2">
+                                                Subscribe Newsletter
+                                            </h5>
+                                            <p>
+                                                A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                                            </p>
+                                            <div class="my-lg-4">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <input type="text" class="form-control footer-form py-2" placeholder="Enter full name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="email" class="form-control footer-form py-2" placeholder="Enter Email">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <button type="button" class="footer-button">Subscribe</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-5 pt-5 mb-3">
+                                    <ul class="list-unstyled d-flex align-items-center gap-4 justify-content-center pt-lg-2 mt-lg-4">
+                                        <li class="">
+                                            <a class="footer-link text-grey"  href="https://www.facebook.com/login/" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi mx-2 bi-facebook" viewBox="0 0 16 16">
+                                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a class="footer-link text-grey"  href="https://twitter.com/login" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi mx-2 bi-twitter" viewBox="0 0 16 16">
+                                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a class="footer-link text-grey"  href="https://www.instagram.com/" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi mx-2 bi-instagram" viewBox="0 0 16 16">
+                                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a class="footer-link text-grey"  href="https://in.linkedin.com/" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi mx-2 bi-linkedin" viewBox="0 0 16 16">
+                                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="text-center mt-4 pt-2">
+                                        Copyright copy&2022 All rights reserved | This template is made with 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#bd1220" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                        </svg>
+                                        by 
+                                        <a class="text-decoration-none text-grey footer-link"  href="#">
+                                            Colorlib
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+                <!--footer section end-->
+             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+        </body>
+    </html>
